@@ -1,10 +1,9 @@
 name: Deploy to Render
 
-
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   id-token: write
@@ -13,7 +12,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
 
     steps:
       - name: Checkout code
@@ -31,15 +29,15 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./monolith
+          file: ./monolith/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/dantulootravels:latest
 
       - name: Deploy to Render
         run: |
-            curl -X POST \
-              -H "Accept: application/json" \
-              -H "Content-Type: application/json" \
-              -d '{"clearCache": false}' \
-              https://api.render.com/deploy/srv-cq326l3qf0us73d8r9s0?key=eSC7TVDdSYY
+          curl -X POST \
+            -H "Accept: application/json" \
+            -H "Content-Type: application/json" \
+            -d '{"clearCache": false}' \
+            https://api.render.com/deploy/srv-cq326l3qf0us73d8r9s0?key=eSC7TVDdSYY
