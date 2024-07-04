@@ -40,4 +40,4 @@ jobs:
             -H "Accept: application/json" \
             -H "Content-Type: application/json" \
             -d '{"clearCache": false}' \
-            https://api.render.com/deploy/srv-cq3in03qf0us73diihe0?key=UTlDQ1yo06A
+            https://api.render.com/deploy/srv-cq3in03qf0us73diihe0?key=HBcZGzaXfaI
