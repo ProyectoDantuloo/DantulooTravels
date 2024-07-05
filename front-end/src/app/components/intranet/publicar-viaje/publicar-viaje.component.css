@@ -1,0 +1,283 @@
+
+.contenedor {
+    background-color: #00A2B9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+
+.centrado-vertical {
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    background: white;
+    padding: 20px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 25%;
+    height: 710px;
+    text-align: center;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}       
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.step.active {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.line {
+    width: 40%;
+    height: 2px;
+    background: #d32f2f;
+    margin: 0 10px;
+}
+
+
+
+.medio-input {
+    display: flex;
+}
+
+.medio-input div input {
+    width: 95%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    margin: 4px 8px 4px 0;
+}
+.medio-input div p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.passenger-container {
+    display: flex;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.passenger-container span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.pasajeros-pagar {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+}
+
+.btn:hover {
+    border-color: #666;
+}
+
+#increment {
+    color: #2196f3;
+}
+
+#increment:hover {
+    border-color: #2196f3;
+}
+
+.pagar-container {
+
+    align-items: center;
+
+}
+
+.pagar {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pagar input {
+    margin-left: 39px;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* dsadas */
+.datetime-container {
+    width: 70%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.datetime-group {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.datetime-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.fecha-salida {
+    text-align: start;
+}
+
+.publicar-button {
+    background-color: #00A2B9;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.publicar-button:active {
+    transform: scale(1.10);
+}
+
+
+.ciudad {
+    width: 25vw;
+    height: 510px;
+    overflow: hidden;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.ciudad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    width: 240px;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+}
+
+
+.map1 {
+    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 620px;
+    height: 530px;
+    justify-content: end;
+    background-color: #fff;
+
+}
+
+.map1 div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map1 button {
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #ff0000;
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.map1 p {
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+google-map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 600px;
+    height: 400px;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.cabeza {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to right, hsla(198, 39%, 28%, 0.603), hsla(195, 35%, 19%, 0.562), hsla(198, 44%, 11%, 0.555)), url(/assets/notificacion.png) no-repeat center center fixed;
+  background: linear-gradient(to right, hsla(197, 38%, 28%, 0.605), hsla(195, 35%, 19%, 0.562), hsla(198, 44%, 11%, 0.555)), url(/assets/notificacion.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100%;
+  height: 100vh;
+}
+
+.notification-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notification-container h2 {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #C0EDE6;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.notification p {
+  margin: 0;
+  color: #333;
+  flex: 1;
+}
+
+button.accept, button.decline {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.accept {
+  background-color: #4CAF50;
+}
+
+button.decline {
+  background-color: #f44336;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination span {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
