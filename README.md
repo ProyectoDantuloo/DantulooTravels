@@ -140,12 +140,6 @@ cd back-end
 - Historial de viajes
 - Sistema de valoraciones y comentarios
 
-### Para Administradores
-- Panel de control administrativo
-- Gestión de usuarios y vehículos
-- Análisis de rutas y estadísticas
-- Moderación de contenido
-
 <div align="center">
   <br><br>
   <i>Desarrollado con ❤️ por el equipo Felines</i>
